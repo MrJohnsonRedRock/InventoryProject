@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.4.228:3000/") // Replace with your VM's IP address
+                .baseUrl("http://192.168.56.1:3000/") // Replace with your VM's IP address
                 .client(httpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
